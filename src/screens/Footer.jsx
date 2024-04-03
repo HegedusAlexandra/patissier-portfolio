@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm'
 
  function Footer() {
   return (
-    <div><ContactForm/><DropDown type={'Sitemap'}/></div>
+    <section><ContactForm/><DropDown type={'Sitemap'}/></section>
   )
 }
 
