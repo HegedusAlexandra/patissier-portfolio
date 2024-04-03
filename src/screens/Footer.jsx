@@ -1,8 +1,9 @@
 import React, {memo} from 'react'
+import DropDown from '../components/DropDown'
 
  function Footer() {
   return (
-    <div>Footer</div>
+    <div><DropDown type={'Sitemap'}/></div>
   )
 }
 

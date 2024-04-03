@@ -13,11 +13,6 @@ export default function DropdownComp({ type }) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
-console.log('====================================');
-console.log(selectedLanguage);
-console.log('====================================');
-
-
   useEffect(() => {
     setDropdownKey((prevKey) => prevKey + 1);
   }, [i18n.language]);
@@ -37,7 +32,7 @@ console.log('====================================');
   };
 
   let options = Object.keys(
-    type === "Language" ? Language : /* type === "Footer" ? */ Sitemap
+    type === "Language" ? Language : Sitemap
   ).map((option) => {
     return {
       value: option,

@@ -1,11 +1,10 @@
 const Language = Object.freeze({
     EN: "en",
     HU: "hu",
-    DE: "de"
   });
 
 const Sitemap = Object.freeze({
-    HOME: "patissier",
+    HOME: "",
     PRODUCTS: "products",
   });
   

@@ -1,11 +1,10 @@
 
 import React from 'react'
-import DropDown from '../components/DropDown'
 
 export default function HomePage() {
   return (
-    <div>HomePage
-      <DropDown/>
+    <div className='w-[100%] h-[100vh] bg-red-200'>HomePage
+     
     </div>
   )
 }

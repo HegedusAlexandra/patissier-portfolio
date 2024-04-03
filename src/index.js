@@ -9,10 +9,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
 import Layout from "./screens/Layout";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { Sitemap } from "./utils/Enum";
 
 const router = createBrowserRouter([
   {
-    path: "/patissier",
+    path: `/${Sitemap.HOME}`,
     element: (
       <Layout>
         <HomePage />
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: "/products",
+    path: `/${Sitemap.PRODUCTS}`,
     element: (
       <Layout>
         <ProductPage />
