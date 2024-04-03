@@ -1,7 +1,11 @@
 import React from "react";
 import landing from '../assets/pictures/ko.png'
+import { useTranslation } from "react-i18next";
 
 export default function Landing() {
+
+const {t} = useTranslation()
+
   return (
     <section
       id="landing"
@@ -13,11 +17,10 @@ export default function Landing() {
           <h3>Budapest</h3>
         </div>
         <h1>
-          <p className="text-[4.5vh] font-bold w-[30vw]">Hello! I am Alexandra, dedicated</p>
-          <p className="text-[24vh] font-sofia text-red-500 drop-shadow-xl">Patissier</p>
-          <p className="text-[2vh] w-[10vw]">
-            I am making plated desserts and magic on the customer’s
-            plate
+          <p className="text-[4.5vh] font-bold w-[30vw]">{t('HomePage.Landing.HELLO')}</p>
+          <p className="text-[24vh] font-sofia text-red-500 drop-shadow-xl">{t('HomePage.Landing.PATISSIER')}</p>
+          <p className="text-[2vh] w-[26vw]">
+            {t('HomePage.Landing.BRING_MAGIC')}
           </p>
         </h1>
       </div>
