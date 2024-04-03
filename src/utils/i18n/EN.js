@@ -1,13 +1,20 @@
 export const EN = {
-    translation:{
-        header:{
-            'header':'header'
+    translation: {
+        Header: {
+          TITLE: "header"
         },
-        main:{
-
+        HomePage: {
+          TITLE: "home"
         },
-        footer:{
-
+        ProductPage: {
+          TITLE: "cakes"
         },
-    }
+        Footer: {
+          SITEMAP: {
+            TITLE: "sitemap",
+            HOME: "home",
+            PRODUCTS: "cakes"
+          }
+        }
+      }
 }

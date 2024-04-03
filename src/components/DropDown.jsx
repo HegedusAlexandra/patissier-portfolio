@@ -36,7 +36,7 @@ export default function DropdownComp({ type }) {
   ).map((option) => {
     return {
       value: option,
-      label: type !== "Language" ? t(`dropdown.${option}`) : option
+      label: type !== "Language" ? t(`Footer.SITEMAP.${option}`) : option
     };
   });
 
@@ -70,7 +70,7 @@ export default function DropdownComp({ type }) {
         placeholder={
           type === "Language"
             ? "Select an option"
-            : t("footer.sitemap").toUpperCase()        
+            : t("Footer.SITEMAP.TITLE").toUpperCase()        
         }
       />
     </div>

@@ -1,16 +1,20 @@
 export const HU = {
-    translation:{
-        header:{
-            'HEADER':'fejléc'
-        },
-        main:{
-
-        },
-        footer:{
-            dropdown:{
-                'HOME':'főoldal',
-                'PRODUCTS':'sütik',
-            }
-        },
+  translation: {
+    Header: {
+      TITLE: "fejléc"
+    },
+    HomePage: {
+      TITLE: "főoldal"
+    },
+    ProductPage: {
+      TITLE: "sütik"
+    },
+    Footer: {
+      SITEMAP: {
+        TITLE: "oldaltérkép",
+        HOME: "főoldal",
+        PRODUCTS: "sütik"
+      }
     }
-}
+  }
+};
