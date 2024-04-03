@@ -1,9 +1,10 @@
 import React, {memo} from 'react'
 import DropDown from '../components/DropDown'
+import ContactForm from '../components/ContactForm'
 
  function Footer() {
   return (
-    <div><DropDown type={'Sitemap'}/></div>
+    <div><ContactForm/><DropDown type={'Sitemap'}/></div>
   )
 }
 

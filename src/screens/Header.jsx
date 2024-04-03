@@ -18,16 +18,16 @@ function Header() {
 
   return (
     <div
-      className={`flex justify-center items-center h-[6vh] w-[100%] bg-red-300 font-poppins text-[1.8vh] ${
-        isScrolled ? "fixed py-[3%]" : "static"
+      className={`flex justify-center items-center h-[10vh] w-[100%]  font-poppins text-[1.8vh] ${
+        isScrolled ? "fixed py-[3%]" : "static bg-red-300"
       }`}
     >
       <div
-        className={`flex flex-row justify-between items-center h-[6vh] px-[5%] uppercase text-white ${
-          isScrolled ? "w-[90%] rounded-full bg-white/20" : "w-[100%]"
+        className={`flex flex-row justify-between items-center h-[8vh] px-[5%] uppercase text-white ${
+          isScrolled ? "w-[90%] rounded-full bg-red-500/70 backdrop-blur-lg" : "w-[100%]"
         }`}
       >
-        <h2>{t("Header.AIM")}</h2>
+        <h2 className="w-[20%]">{t("Header.AIM")}</h2>
         <NavComponent />
         <DropDown type={"Language"} />
       </div>

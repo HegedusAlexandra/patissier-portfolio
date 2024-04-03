@@ -2,7 +2,11 @@ export const EN = {
     translation: {
         Header: {
           TITLE: "header",
-          AIM: 'patissier portfolio'
+          AIM: 'patissier portfolio',
+          ABOUT_ME:'about me',
+          SKILLS:'skills',
+          CAKES:'cakes',
+          CONTACT:'contact'
         },
         HomePage: {
           TITLE: "home"

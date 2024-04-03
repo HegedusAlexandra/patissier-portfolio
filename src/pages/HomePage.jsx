@@ -1,14 +1,32 @@
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import AboutMe from "../screens/AboutMe";
+import Skills from "../screens/Skills";
+import Landing from "../screens/Landing";
 
-import React from 'react'
-import { useTranslation } from 'react-i18next'
+import { useLocation } from "react-router-dom";
 
 export default function HomePage() {
-  const {t} = useTranslation()
-  
-  return (
-    <div className='w-[100%] h-[100vh] bg-red-300'>
-      {t('HomePage.TITLE')}
-    </div>
-  )
-}
+  const { t } = useTranslation();
+  const location = useLocation();
+  const { href } = location.state || {};
 
+  useEffect(() => {
+    const scrollToSection = () => {
+      const element = document.getElementById(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    scrollToSection();
+  }, [href]);
+
+  return (
+    <div className="w-[100%] bg-red-300">
+      <Landing />
+      <AboutMe />
+      <Skills />
+    </div>
+  );
+}
