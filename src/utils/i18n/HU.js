@@ -1,7 +1,8 @@
 export const HU = {
   translation: {
     Header: {
-      TITLE: "fejléc"
+      TITLE: "fejléc",
+      AIM:'cukrász portfolió'
     },
     HomePage: {
       TITLE: "főoldal"

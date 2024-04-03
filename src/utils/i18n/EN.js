@@ -1,7 +1,8 @@
 export const EN = {
     translation: {
         Header: {
-          TITLE: "header"
+          TITLE: "header",
+          AIM: 'patissier portfolio'
         },
         HomePage: {
           TITLE: "home"
