@@ -5,11 +5,9 @@ const Language = Object.freeze({
   });
 
 const Sitemap = Object.freeze({
-    HOME: "osk",
-    PRODUCTS: "productlist",
-    CART:'sum'
+    HOME: "patissier",
+    PRODUCTS: "products",
   });
-
   
   
 export { Language,Sitemap };
