@@ -18,8 +18,8 @@ function Header() {
 
   return (
     <section
-      className={`flex justify-center items-center h-[10vh] w-[100%]  font-poppins text-[1.8vh] ${
-        isScrolled ? "fixed py-[3%]" : "static bg-red-300"
+      className={`flex justify-center items-center h-[10vh] w-[100%] font-poppins text-[1.8vh] ${
+        isScrolled ? "fixed z-10 py-[3%]" : "static bg-red-300"
       }`}
     >
       <div
