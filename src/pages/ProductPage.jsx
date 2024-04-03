@@ -1,6 +1,9 @@
-import React,{useEffect} from 'react'
-import { useTranslation } from 'react-i18next'
-import { useLocation } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import PlatedScreen from "../screens/PlatedScreen";
+import CakeScreen from "../screens/CakeScreen";
+import OtherScreen from "../screens/OtherScreen";
 
 export default function ProductPage() {
   const { t } = useTranslation();
@@ -19,6 +22,10 @@ export default function ProductPage() {
   }, [href]);
 
   return (
-    <div id='products' className='w-[100%] h-[100vh] bg-red-300'>{t("ProductPage.TITLE")}</div>
-  )
+    <div id="products" className="w-[100%] bg-red-300">
+      <PlatedScreen />
+      <CakeScreen />
+      <OtherScreen />
+    </div>
+  );
 }

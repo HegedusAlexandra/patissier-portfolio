@@ -20,6 +20,15 @@ export const HU = {
         TITLE: "bemutatkozás",
         INTRODUCTION:
           "Az életem olyan, mint egy többrétegű torta, ahol minden réteg egy szeletnyi szenvedélyt, kreativitást és folyamatos tanulást képvisel. A cukrászat nem csupán szakma számomra, hanem egy művészi kifejezési forma, ahol a képzeletem szárnyalhat, és ahol a finom ízek és formák által varázsolhatok mosolyt az emberek arcára. De a kreativitásom nem merül ki a konyhában; a festészet és a programozás adja a másik két alappillért.A tanulás iránti szeretetem vezérel abban, hogy folyamatosan bővítsem tudásomat és készségeimet. Mindig van mit tanulni – új receptek, festészeti technikák, programozási nyelvek –, és ez a tudáséhség tart éberen és motiváltan.A nyugodt, kiegyensúlyozott életvitel fontossága számomra olyan, mint a napsütés egy pihentető délutánon. Harmoniára törekszem mindennapjaimban, hogy környezetemmel és önmagammal is békében legyek. Ez a belső béke és egyensúly ad erőt és inspirációt nekem, hogy a legjobbamat nyújthassam mindenben, amit csinálok.Minden, amit csinálok, a szenvedély és a kreativitás jegyében történik.Az olvasás iránti szenvedélyem kalandozásokra hív egy másik világba, ahol a fantasy és sci-fi történetek mellett a szépirodalmi művek és tudományos ismeretek is helyet kapnak. Jelenleg az olasz nyelv tanulásával bővítem látókörömet, új kultúrákat és perspektívákat felfedezve. Ezek az értékek vezérlik életem minden aspektusát, lehetővé téve számomra, hogy a legteljesebb mértékben éljem meg minden egyes napot."
+      },
+      Skills:{
+        HUN:'magyar',
+        ENG:'angol',
+        ITA:'olasz',
+        GER:'német',
+        HUN_LEV:'anyanyelv',
+        ENG_LEV:'C2',
+        ITA_LEV:'kezdő'
       }
     },
     ProductPage: {

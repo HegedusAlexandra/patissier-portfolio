@@ -1,13 +1,33 @@
 import React from "react";
+import kalacs from "../assets/pictures/kalacs.jpg";
+import pavlova from "../assets/pictures/pavlova másolata.jpg";
+import Scale from "../components/Scale";
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
+  const { t } = useTranslation();
+
+  const scaleRow = 
+    (str_lang,str_lev,scaleWidth) => (
+      <span className="flex md:flex-row flex-col w-[100%] gap-[2vh]">
+        <div className="md:w-[40%] flex flex-row">
+          <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
+            {str_lang}
+          </p>
+          <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
+            {str_lev}
+          </p>
+        </div>
+        <Scale scaleWidth={scaleWidth} />
+      </span>
+    )
+
   return (
     <section id="skills" className="w-[100%]  font-poppins">
-      <div className="flex flex-row w-[100%] bg-transparent px-[5vw] py-[10vh] gap-2">
+      <div className="flex flex-row w-[100%] bg-transparent px-[5vw] pt-[16vh] pb-[20vh] gap-2">
         <div className="flex-1 flex justify-center items-center">
           <div className="flex flex-col justify-center items-center size-[20vw] bg-white rounded-full shadow-[6px_24px_16px_4px_rgba(50,0,0,0.5)]">
-            <div className="absolute w-[24vw] h-[16vh] bg-red-300 -rotate-[24deg] -translate-y-[12vh] -translate-x-[3vw]"></div>{" "}
-            {/* Red line */}
+            <div className="absolute w-[24vw] h-[16vh] bg-red-300 -rotate-[24deg] -translate-y-[14vh] -translate-x-[3vw]"></div>
             <h2 className="font-sofia font-bold text-red-700 text-[20vh] drop-shadow-smaller">
               100+
             </h2>
@@ -18,8 +38,7 @@ export default function Skills() {
         </div>
         <div className="flex-1 flex justify-center items-center">
           <div className="flex flex-col justify-center items-center size-[20vw] bg-white rounded-full shadow-[6px_24px_16px_4px_rgba(50,0,0,0.5)]">
-            <div className="absolute w-[24vw] h-[16vh] bg-red-300 -rotate-[24deg] -translate-y-[12vh] -translate-x-[3vw]"></div>{" "}
-            {/* Red line */}
+            <div className="absolute w-[24vw] h-[16vh] bg-red-300 -rotate-[24deg] -translate-y-[14vh] -translate-x-[3vw]"></div>
             <h2 className="font-sofia font-bold text-red-700 text-[20vh] drop-shadow-smaller">
               10
             </h2>
@@ -30,8 +49,7 @@ export default function Skills() {
         </div>
         <div className="flex-1 flex justify-center items-center">
           <div className="flex flex-col justify-center items-center size-[20vw] bg-white rounded-full shadow-[6px_24px_16px_4px_rgba(50,0,0,0.5)]">
-            <div className="absolute w-[24vw] h-[16vh] bg-red-300 -rotate-[24deg] -translate-y-[12vh] -translate-x-[3vw]"></div>{" "}
-            {/* Red line */}
+            <div className="absolute w-[24vw] h-[16vh] bg-red-300 -rotate-[24deg] -translate-y-[14vh] -translate-x-[3vw]"></div>
             <h2 className="font-sofia font-bold text-red-700 text-[20vh] drop-shadow-smaller">
               8
             </h2>
@@ -43,7 +61,7 @@ export default function Skills() {
       </div>
       <div className="flex flex-col justify-center items center bg-transparent px-[5vw] py-[10vh] gap-[10vh] bg-white">
         <div className="flex flex-row w-[100%] h-[50vh]">
-          <div className="flex flex-col w-[50%] pr-[20vw]">
+          <div className="flex flex-col justify-center w-[50%] pr-[20vw]">
             <h2 className="font-sofia drop-shadow-smaller text-[#6DAAE3] text-[8vh] mb-[4vh]">
               technical skills
             </h2>
@@ -54,38 +72,49 @@ export default function Skills() {
             </p>
           </div>
           <div className="w-[50%]">
-            <img className="w-[100%] h-[50vh] bg-blue-600" />
+            <img
+              className="w-[100%] h-[50vh] object-cover object-center rounded-sm"
+              src={pavlova}
+              alt="pavlova"
+            />
           </div>
         </div>
         <div className="flex flex-row w-[100%] h-[50vh]">
           <div className="w-[50%]">
-            <img className="w-[100%] h-[50vh] bg-blue-600" />
+            <img
+              className="w-[100%] h-[50vh] bg-blue-600 object-cover rounded-sm"
+              src={kalacs}
+              alt="kalacs"
+            />
           </div>
-          <div className="flex flex-col items-end w-[50%] pl-[20vw]">
+          <div className="flex flex-col justify-center items-end w-[50%] pl-[20vw]">
             <h2 className="font-sofia drop-shadow-smaller text-[#6DAAE3] text-[8vh] mb-[4vh]">
               soft skills
             </h2>
-            <p >
+            <p className="text-right">
               making websites and this a short introduction so you can develop
               sympahy with memaking websites and this a short introduction so
-              you can develop sympahy with memaking websites and this a short{" "}
+              you can develop sympahy with memaking websites and this a short
             </p>
           </div>
         </div>
         <div className="flex flex-row w-[100%] h-[50vh]">
-          <div className="flex flex-col w-[50%] pr-[20vw]">
+          <div className="flex flex-col  justify-center w-[50%] pr-[20vw] -translate-y-[2vh]">
             <h2 className="font-sofia drop-shadow-smaller text-[#6DAAE3] text-[8vh] mb-[4vh]">
               languages
             </h2>
             <p>
               making websites and this a short introduction so you can develop
               sympahy with memaking websites and this a short introduction so
-              you can develop sympahy with memaking websites and this a short{" "}
+              you can develop sympahy with memaking websites and this a short
             </p>
           </div>
-          <div className="w-[50%]">
-            <img className="w-[100%] h-[50vh] bg-blue-600" />
-          </div>
+          <span className="flex flex-col justify-center w-[60%] h-[100%] gap-[2vh]">
+            {scaleRow(t("HomePage.Skills.HUN"),t("HomePage.Skills.HUN_LEV"),100)}
+            {scaleRow(t("HomePage.Skills.ENG"),t("HomePage.Skills.ENG_LEV"),90)}
+            {scaleRow(t("HomePage.Skills.ITA"),t("HomePage.Skills.ITA_LEV"),22)}
+            {scaleRow(t("HomePage.Skills.GER"),t("HomePage.Skills.ITA_LEV"),10)}           
+          </span>
         </div>
       </div>
     </section>

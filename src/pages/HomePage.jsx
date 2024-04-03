@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
-import { useTranslation } from "react-i18next";
 import AboutMe from "../screens/AboutMe";
 import Skills from "../screens/Skills";
 import Landing from "../screens/Landing";
-
 import { useLocation } from "react-router-dom";
+import CakeTypeNav from "../screens/CakeTypeNav";
 
 export default function HomePage() {
-  const { t } = useTranslation();
   const location = useLocation();
   const { href } = location.state || {};
 
@@ -27,6 +25,7 @@ export default function HomePage() {
       <Landing />
       <AboutMe />
       <Skills />
+      <CakeTypeNav/>
     </div>
   );
 }
