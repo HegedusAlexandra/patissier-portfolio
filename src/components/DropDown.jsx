@@ -43,7 +43,7 @@ export default function DropdownComp({ type }) {
   return (
     <div
       className={`w-[10%] ${
-        type !== "Language" && "w-fit ml-[2vh] md:translate-y-1"
+        type !== "Language" && "w-fit md:translate-y-1"
       } flex justify-end items-center rounded-sm`}
     >
       <Dropdown

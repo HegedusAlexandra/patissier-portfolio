@@ -46,9 +46,9 @@ export default function Skills() {
       </div>
       <div className="flex flex-col justify-center items center bg-transparent px-[5vw] py-[10vh] gap-[10vh] bg-white">
         <div className="flex flex-row w-[100%] h-[50vh]">
-          <div className="flex flex-col justify-center w-[50%] pr-[20vw]">
+          <div className="flex flex-col justify-center w-[54%] pr-[16vw]">
             <h2 className="font-pacifico drop-shadow-smaller text-sky-700 text-[8vh] mb-[4vh]">
-              technical skills
+              technical skills <span className="text-sky-300">.</span>
             </h2>
             <p>
               making websites and this a short introduction so you can develop
@@ -74,7 +74,7 @@ export default function Skills() {
           </div>
           <div className="flex flex-col justify-center items-end w-[50%] pl-[20vw]">
             <h2 className="font-pacifico drop-shadow-smaller text-sky-700 text-[8vh] mb-[4vh]">
-              soft skills<span className="text-sky-300">.</span>
+              soft skills <span className="text-sky-300">.</span>
             </h2>
             <p className="text-right">
               making websites and this a short introduction so you can develop
@@ -86,7 +86,7 @@ export default function Skills() {
         <div className="flex flex-row w-[100%] h-[50vh]">
           <div className="flex flex-col  justify-center w-[35%] pr-[5%] -translate-y-[2vh]">
             <h2 className="font-pacifico drop-shadow-smaller text-sky-700 text-[8vh] mb-[4vh]">
-              languages
+              languages <span className="text-sky-300">.</span>
             </h2>
             <p>
               making websites and this a short introduction so you can develop

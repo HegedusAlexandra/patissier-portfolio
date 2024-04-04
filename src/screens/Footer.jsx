@@ -16,14 +16,14 @@ function Footer() {
             location.pathname === "/" ? "bg-orange-50" : "bg-red-400"
           }`}
         >
-          <h2 className="font-pacifico text-red-600 drop-shadow-smaller text-[22vh] text-center translate-y-[10vh]">
+          <h2 className="font-pacifico text-red-600 drop-shadow-smaller text-[20vh] text-center translate-y-[10vh]">
             Contact
           </h2>
         </div>
       )}
       <ContactForm />
       <div className="flex flex-col justify-center items-center bg-orange-50 w-[100%] px-[4%] h-[32vh] ">
-        <h2 className="md:text-[14vh] text-[4vh] font-pacifico text-sky-700 drop-shadow-smaller">
+        <h2 className="md:text-[20vh] text-[4vh] font-pacifico text-sky-700 drop-shadow-smaller">
           Alexandra's Portfolio
         </h2>
         <p className="pb-[1vh]">&copy; Copyright 2024 Hegedüs Alexandra</p>
