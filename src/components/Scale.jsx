@@ -7,8 +7,8 @@ export default function Scale({
   scaleWidth = 60,
   containerHeight = 4,
   scaleHeight = 80,
-  containerColor = "black",
-  scaleColor = "pink"
+  containerColor = "dimgrey",
+  scaleColor = "lightsalmon"
 }) {
   const [scaleRef, scaleInView] = useInView({
     threshold: 0.3

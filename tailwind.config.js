@@ -7,7 +7,7 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
-        'sofia':['Sofia', 'cursive'],
+        'pacifico':["Pacifico", 'cursive'],
       },
       dropShadow: {
         'green': '5px 5px 2px rgba(155, 55, 55, 0.9)',

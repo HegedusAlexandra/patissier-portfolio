@@ -17,9 +17,9 @@ const {t} = useTranslation()
           <h3>Budapest</h3>
         </div>
         <h1>
-          <p className="text-[4.5vh] font-bold w-[30vw]">{t('HomePage.Landing.HELLO')}</p>
-          <p className="text-[24vh] font-sofia text-red-600 drop-shadow-green">{t('HomePage.Landing.PATISSIER')}</p>
-          <p className="text-[2vh] w-[26vw] text-orange-100">
+          <p className="text-[4vh] font-bold w-[30vw]">{t('HomePage.Landing.HELLO')}</p>
+          <p className="text-[22vh] font-pacifico text-red-600 drop-shadow-green">{t('HomePage.Landing.PATISSIER')}</p>
+          <p className="text-[2vh] w-[20vw] text-orange-100">
             {t('HomePage.Landing.BRING_MAGIC')}
           </p>
         </h1>
