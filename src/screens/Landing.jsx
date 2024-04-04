@@ -18,7 +18,7 @@ const {t} = useTranslation()
         </div>
         <h1>
           <p className="text-[4vh] font-bold w-[30vw]">{t('HomePage.Landing.HELLO')}</p>
-          <p className="text-[22vh] font-pacifico text-red-600 drop-shadow-green">{t('HomePage.Landing.PATISSIER')}</p>
+          <p className="text-[22vh] font-pacifico text-red-600 drop-shadow-smaller">{t('HomePage.Landing.PATISSIER')}</p>
           <p className="text-[2vh] w-[20vw] text-orange-100">
             {t('HomePage.Landing.BRING_MAGIC')}
           </p>

@@ -22,7 +22,7 @@ export default function ProductPage() {
   }, [href]);
 
   return (
-    <div id="products" className="w-[100%] bg-red-300">
+    <div id="products" className="w-[100%] bg-red-500">
       <PlatedScreen />
       <CakeScreen />
       <OtherScreen />
