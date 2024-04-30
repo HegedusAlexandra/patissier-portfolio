@@ -1,8 +1,11 @@
 import React, { useCallback } from "react";
-import kalacs from "../assets/pictures/kalacs.jpg";
-import pavlova from "../assets/pictures/ca (13).jpg";
+import lazy_kalacs from "../assets/pictures/ot (2l).jpg";
+import ready_kalacs from "../assets/pictures/ot (2).jpg";
 import Scale from "../components/Scale";
 import { useTranslation } from "react-i18next";
+import LazyImage from "../components/LazyImage";
+import lazy_pavlova from "../assets/pictures/ca (13l).jpg";
+import ready_pavlova from "../assets/pictures/ca (13).jpg";
 
 export default function Skills() {
   const { t } = useTranslation();
@@ -57,19 +60,23 @@ export default function Skills() {
             </p>
           </div>
           <div className="w-[50%]">
-            <img
-              className="w-[100%] h-[50vh] object-cover object-top rounded-sm"
-              src={pavlova}
-              alt="pavlova"
+            <LazyImage
+              class_img={"w-[100%] h-[50vh] object-cover object-top rounded-sm"}
+              alt_img={"pavlova"}
+              lazy_img={lazy_pavlova}
+              ready_img={ready_pavlova}
             />
           </div>
         </div>
         <div className="flex flex-row w-[100%] h-[50vh]">
           <div className="w-[50%]">
-            <img
-              className="w-[100%] h-[50vh] bg-ornge-500 object-cover rounded-sm"
-              src={kalacs}
-              alt="kalacs"
+            <LazyImage
+              class_img={
+                "w-[100%] h-[50vh] object-cover object-center rounded-sm"
+              }
+              alt_img={"kalacs"}
+              lazy_img={lazy_kalacs}
+              ready_img={ready_kalacs}
             />
           </div>
           <div className="flex flex-col justify-center items-end w-[50%] pl-[20vw]">

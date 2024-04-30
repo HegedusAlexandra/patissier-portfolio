@@ -1,10 +1,11 @@
 import React from "react";
-import landing from '../assets/pictures/ko.png'
+import lazy_landing from "../assets/pictures/kol.png";
+import ready_landing from "../assets/pictures/ko.png";
 import { useTranslation } from "react-i18next";
+import LazyImage from "../components/LazyImage";
 
 export default function Landing() {
-
-const {t} = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section
@@ -17,15 +18,24 @@ const {t} = useTranslation()
           <h3>Budapest</h3>
         </div>
         <h1>
-          <p className="text-[4vh] font-bold w-[30vw]">{t('HomePage.Landing.HELLO')}</p>
-          <p className="text-[22vh] font-pacifico text-red-600 drop-shadow-smaller">{t('HomePage.Landing.PATISSIER')}</p>
+          <p className="text-[4vh] font-bold w-[30vw]">
+            {t("HomePage.Landing.HELLO")}
+          </p>
+          <p className="text-[22vh] font-pacifico text-red-600 drop-shadow-smaller">
+            {t("HomePage.Landing.PATISSIER")}
+          </p>
           <p className="text-[2vh] w-[20vw] text-orange-100">
-            {t('HomePage.Landing.BRING_MAGIC')}
+            {t("HomePage.Landing.BRING_MAGIC")}
           </p>
         </h1>
       </div>
       <div className="flex justify-end items-center w-[44vw] h-[80vh] pt-[10vh] ">
-        <img src={landing} alt="first_dessert" className="bg-transparent size-[40vw]" />
+        <LazyImage
+          class_img={"bg-transparent size-[40vw]"}
+          alt_img={"first_dessert"}
+          lazy_img={lazy_landing}
+          ready_img={ready_landing}
+        />
       </div>
     </section>
   );
