@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import LazyImage from "../components/LazyImage";
 import lazy_pavlova from "../assets/pictures/ca (13l).jpg";
 import ready_pavlova from "../assets/pictures/ca (13).jpg";
+import Counter from "../components/Counter";
 
 export default function Skills() {
   const { t } = useTranslation();
@@ -28,10 +29,8 @@ export default function Skills() {
       <div className="flex-1 flex justify-center items-center">
         <div className="flex flex-col justify-center items-center size-[20vw] bg-white rounded-full shadow-[6px_24px_16px_4px_rgba(50,0,0,0.5)]">
           <div className="absolute w-[24vw] h-[16vh] bg-red-300 -rotate-[24deg] -translate-y-[14vh] -translate-x-[3vw]"></div>
-          <h2 className="font-pacifico font-bold text-red-700 text-[26vh] drop-shadow-smaller -translate-y-[8vh]">
-            {num}
-          </h2>
-          <p className="text-[2vh] w-[50%] text-center -translate-y-[10vh]">
+          <Counter num={num} counter_class={"font-pacifico font-bold text-red-700 text-[26vh] drop-shadow-smaller"}/>          
+          <p className="text-[3vh] w-[100%] text-center -translate-y-[10vh]">
             {name}
           </p>
         </div>
@@ -43,7 +42,7 @@ export default function Skills() {
   return (
     <section id="skills" className="w-[100%]  font-poppins">
       <div className="flex flex-row w-[100%] bg-transparent px-[5vw] pt-[16vh] pb-[20vh] gap-2">
-        {counterItem("100+", "receipes")}
+        {counterItem("100", "receipes")}
         {counterItem("10", "years of experience")}
         {counterItem("8", "countries's desserts")}
       </div>

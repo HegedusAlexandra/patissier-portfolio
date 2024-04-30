@@ -35,7 +35,7 @@ export default function CakeScreen() {
       <div className="flex flex-row flex-wrap justify-center items-center w-[100%] rounded-sm overflow-hidden">
         {images.lazyImages.map((lazyImage, index) => (
           <LazyImage
-            class_img={"size-[24vw] object-contain shadow-type bg-red-300 m-[4vh]"}
+            class_img={"size-[24vw] object-contain shadow-type bg-red-300 m-[4vh] product_img"}
             alt_img={`plated ${index + 1}`}
             key={`plated ${index + 1}`}
             lazy_img={lazyImage.default}
