@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import kalacs from "../assets/pictures/kalacs.jpg";
-import pavlova from "../assets/pictures/pavlova másolata.jpg";
+import pavlova from "../assets/pictures/ca (13).jpg";
 import Scale from "../components/Scale";
 import { useTranslation } from "react-i18next";
 
@@ -58,7 +58,7 @@ export default function Skills() {
           </div>
           <div className="w-[50%]">
             <img
-              className="w-[100%] h-[50vh] object-cover object-center rounded-sm"
+              className="w-[100%] h-[50vh] object-cover object-top rounded-sm"
               src={pavlova}
               alt="pavlova"
             />
