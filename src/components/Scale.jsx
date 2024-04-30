@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 export default function Scale({
   containerWidth = 100,
   scaleWidth = 60,
-  containerHeight = 4,
+  containerHeight = 3,
   scaleHeight = 80,
   containerColor = "black",
   scaleColor = "lightsalmon"

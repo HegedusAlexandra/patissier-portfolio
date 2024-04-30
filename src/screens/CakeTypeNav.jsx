@@ -21,25 +21,25 @@ export default function CakeTypeNav() {
   console.log(isHovered);
 
   return (
-    <section className="w-[100%] bg-gradient-to-b from-white to-[#FFF7ED] px-[5vw]">
+    <section className="w-[100%] bg-gradient-to-b from-white to-[#FFF7ED] p-[5vw]">
       <ul className="flex flex-row items-center justify-center w-[100%] h-[100%] gap-[0.5%]">
-      <li
+        <li
           onMouseEnter={() => setHovered(2)}
           onMouseOut={() => setHovered(null)}
           onClick={() => goToScreen("products", "cake")}
-          className="flex-1 h-[70%] bg-white rounded-sm object-cover overflow-hidden shadow-type "
+          className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm object-cover overflow-hidden shadow-type "
         >
           {isHovered === 2 && (
             <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
-              <span class="material-symbols-outlined text-[5vh]">cake</span>
-              <h2 className="uppercase text-[4vh]">
-                 cakes             
-              </h2>
-              <span class="material-symbols-outlined text-[8vh]">chevron_right</span>
+              <span className="material-symbols-outlined text-[5vh]">cake</span>
+              <h2 className="uppercase text-[4vh]">cakes</h2>
+              <span className="material-symbols-outlined text-[8vh]">
+                chevron_right
+              </span>
             </div>
           )}
           <LazyImage
-            class_img={"w-[100%] object-contain hover:opacity-45"}
+            class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
             alt_img={"cake"}
             lazy_img={lazy_cake}
             ready_img={ready_cake}
@@ -49,42 +49,42 @@ export default function CakeTypeNav() {
           onMouseEnter={() => setHovered(1)}
           onMouseOut={() => setHovered(null)}
           onClick={() => goToScreen("products", "plated")}
-          className="flex-1 h-[70%] bg-white rounded-sm overflow-hidden shadow-type"
+          className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm overflow-hidden shadow-type"
         >
           {isHovered === 1 && (
             <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
-              <span class="material-symbols-outlined text-[5vh]">icecream</span>
-              <h2 className="uppercase text-[4vh]">
-                 plated desserts              
-              </h2>
-              <span class="material-symbols-outlined text-[8vh]">chevron_right</span>
+              <span className="material-symbols-outlined text-[5vh]">icecream</span>
+              <h2 className="uppercase text-[4vh]">plated desserts</h2>
+              <span className="material-symbols-outlined text-[8vh]">
+                chevron_right
+              </span>
             </div>
           )}
           <LazyImage
-            class_img={"w-[100%] object-contain hover:opacity-45"}
+            class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
             alt_img={"plated"}
             lazy_img={lazy_plated}
             ready_img={ready_plated}
           />
         </li>
-       
+
         <li
           onMouseEnter={() => setHovered(3)}
           onMouseOut={() => setHovered(null)}
           onClick={() => goToScreen("products", "other")}
-          className="flex-1 h-[70%] bg-white rounded-sm overflow-hidden shadow-type "
+          className="flex-1 h-[70%] bg-white overflow-hidden shadow-type rounded-full md:rounded-sm"
         >
           {isHovered === 3 && (
             <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
-              <span class="material-symbols-outlined text-[5vh]">cookie</span>
-              <h2 className="uppercase text-[3.5vh]">
-                 bonbons & cookies            
-              </h2>
-              <span class="material-symbols-outlined text-[8vh]">chevron_right</span>
+              <span className="material-symbols-outlined text-[5vh]">cookie</span>
+              <h2 className="uppercase text-[3.5vh]">bonbons & cookies</h2>
+              <span className="material-symbols-outlined text-[8vh]">
+                chevron_right
+              </span>
             </div>
           )}
           <LazyImage
-            class_img={"w-[100%] object-contain hover:opacity-45"}
+            class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
             alt_img={"bonbon"}
             lazy_img={lazy_bonbon}
             ready_img={ready_bonbon}

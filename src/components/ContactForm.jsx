@@ -5,9 +5,9 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="flex flex-row justify-center w-[100%] h-[68vh] p-[5vw] pt-[10vw] bg-orange-50 font-poppins"
+      className="flex flex-row justify-center w-[100%] md:h-[68vh] h-[30vh] p-[5vw] pt-[10vw] bg-orange-50 font-poppins"
     >
-      <div className="flex flex-col justify-between  w-[80%] border-x-2 border-solid border-cyan-500 px-[2vw]">
+      <div className="flex flex-col justify-between  md:w-[80%] w-[100%] border-x-2 border-solid border-cyan-500 px-[2vw]">
         <h3 className="text-[2vh] mb-[2vh]">
           Let's speak!Also if you just want to speak or have any idea, don't
           hasitate to get in touch

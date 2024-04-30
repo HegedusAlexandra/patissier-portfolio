@@ -16,11 +16,12 @@ export default function AboutMe() {
   return (
     <section
       id="about_me"
-      className="flex flex-row justify-center items-center w-[100%] bg-white px-[5vw] font-poppins"
+      className="flex md:flex-row flex-col justify-center items-center w-[100%] bg-white px-[5vw] pb-[4vh] font-poppins"
     >
-      <div className="w-[40%]">{View}</div>
-      <div className="flex flex-col items-start justify-center w-[60%]">
-        <h2 className="font-pacifico drop-shadow-smaller text-sky-700 md:text-[10vh] text-[5vh] mb-[4vh]">
+      <div className="absolute md:left-[5vw] top-[94vh] md:top-[100vh] md:size-[22vw] size-[44vw] bg-red-500 rounded-full mt-[2vh]"/>
+      <div className="md:w-[40%] w-[80%] rounded-full mt-[2vh]">{View}</div>
+      <div className="flex flex-col items-start justify-center md:w-[60%] w-[90%]">
+        <h2 className="font-pacifico drop-shadow-smaller text-sky-700 md:text-[10vh] text-[6vh] mx-auto mb-[4vh] md:mx-0">
           {t("HomePage.AboutMe.TITLE")}
         </h2>
         <p className="text-[1.8vh]">{t("HomePage.AboutMe.INTRODUCTION")}</p>
