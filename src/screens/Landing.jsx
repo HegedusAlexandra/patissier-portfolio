@@ -10,28 +10,28 @@ export default function Landing() {
   return (
     <section
       id="landing"
-      className="flex flex-row w-[100%] bg-transparent px-[5vw] font-poppins text-white pb-[10vh]"
+      className="flex flex-row w-[100%] bg-transparent px-[5vw] font-poppins text-white pb-[10vh] overflow-hidden"
     >
-      <div className="flex flex-col justify-between items-start w-[45vw] h-[80vh] pt-[10vh]">
-        <div className="flex flex-row justify-start items-center w-[100%] gap-2 text-[1.4vh]">
+      <div className="md:static absolute z-9 flex flex-col justify-between items-start w-[45vw] h-[80vh] pt-[10vh]">
+        <div className="flex flex-row justify-start items-center w-[100%] gap-2 text-[1.4vh] mb-[2vh]">
           <span class="material-symbols-outlined">globe</span>
           <h3>Budapest</h3>
         </div>
         <h1>
-          <p className="text-[4vh] font-bold w-[30vw]">
+          <p className="md:text-[4vh] text-[3vh] font-bold md:w-[30vw] w-[80vw]">
             {t("HomePage.Landing.HELLO")}
           </p>
-          <p className="text-[22vh] font-pacifico text-red-600 drop-shadow-smaller">
+          <p className="text-[10vh] md:text-[22vh] font-pacifico text-red-600 drop-shadow-smaller">
             {t("HomePage.Landing.PATISSIER")}
           </p>
-          <p className="text-[2vh] w-[20vw] text-orange-100">
+          <p className="text-[2vh] md:w-[20vw] w-[90vw] md:mt-0 mt-[30vh] text-orange-100">
             {t("HomePage.Landing.BRING_MAGIC")}
           </p>
         </h1>
       </div>
-      <div className="flex justify-end items-center w-[44vw] h-[80vh] pt-[10vh] ">
+      <div className="flex justify-end items-center md:w-[44vw] w-[100vw] h-[80vh] pt-[10vh] ">
         <LazyImage
-          class_img={"bg-transparent size-[40vw] product_img"}
+          class_img={"bg-transparent md:size-[40vw] product_img"}
           alt_img={"first_dessert"}
           lazy_img={lazy_landing}
           ready_img={ready_landing}

@@ -12,8 +12,8 @@ export default function ContactForm() {
           Let's speak!Also if you just want to speak or have any idea, don't
           hasitate to get in touch
         </h3><h2 className="text-[3vh]">Hegedüs Alexandra</h2>        
-        <h2 className="text-[5vh]">hegale.dev@yahoo.com</h2>
-        <h2 className="text-[5vh]">hexapastry@gmail.com</h2>
+        <h2 className="md:text-[5vh]">hegale.dev@yahoo.com</h2>
+        <h2 className="md:text-[5vh]">hexapastry@gmail.com</h2>
         {/*  <DropDown/>   */}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import DropDown from "../components/DropDown";
+
 import NavComponent from "../components/NavComponent";
 import { useLocation } from "react-router-dom";
 
@@ -29,9 +29,8 @@ function Header() {
           isScrolled ? "w-[90%] rounded-full bg-red-500/60 backdrop-blur-lg" : "w-[100%]"
         }`}
       >
-        <h2 className="w-[20%]">{t("Header.AIM")}</h2>
+        <h2 className="w-[20%] hidden md:block">{t("Header.AIM")}</h2>
         <NavComponent />
-        <DropDown type={"Language"} />
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ export default function HomePage() {
   }, [href]);
 
   return (
-    <div className="w-[100%] bg-red-300">
+    <div className="w-[100%] bg-red-300 overflow-x-hidden">
       <Landing />
       <AboutMe />
       <Skills />

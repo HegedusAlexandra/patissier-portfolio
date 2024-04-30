@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
+import DropDown from "../components/DropDown";
 
 export default function NavComponent() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ export default function NavComponent() {
   };
 
   return (
-    <ul className="flex-1 flex flex-row items-center justify-end gap-[10%]">
+    <ul className="flex-1 flex flex-row items-center md:justify-end justify-between md:gap-[10%]">
       <li onClick={() => goToScreen("", "about_me")} className="nav_link ">
         {t("Header.ABOUT_ME")}
       </li>
@@ -27,6 +28,7 @@ export default function NavComponent() {
       >
         {t("Header.CONTACT")}
       </li>
+      {window.scrollY === 0 && <DropDown type={"Language"} />}
     </ul>
   );
 }

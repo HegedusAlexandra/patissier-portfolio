@@ -20,7 +20,7 @@ export default function AboutMe() {
     >
       <div className="w-[40%]">{View}</div>
       <div className="flex flex-col items-start justify-center w-[60%]">
-        <h2 className="font-pacifico drop-shadow-smaller text-sky-700 text-[10vh] mb-[4vh]">
+        <h2 className="font-pacifico drop-shadow-smaller text-sky-700 md:text-[10vh] text-[5vh] mb-[4vh]">
           {t("HomePage.AboutMe.TITLE")}
         </h2>
         <p className="text-[1.8vh]">{t("HomePage.AboutMe.INTRODUCTION")}</p>
