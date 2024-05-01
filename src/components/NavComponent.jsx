@@ -36,7 +36,7 @@ export default function NavComponent() {
       </li>
       <li
         onClick={() => goToScreen("", "contact")}
-        className="nav_link flex justify-center items-center  p-[1%] bg-white text-red-300 font-bold rounded-full"
+        className="nav_link flex justify-center items-center p-[1%] bg-white text-red-300 font-bold rounded-full"
       >
         {t("Header.CONTACT")}
       </li>

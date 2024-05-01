@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <section
-      className={`flex justify-center items-center h-[10vh] w-[100%] font-poppins text-[1.8vh] ${
+      className={`flex justify-center items-center h-[10vh] w-[100%] font-poppins md:text-[1.8vh] text-[1.4vh] ${
         isScrolled ? "fixed z-10 py-[3%]" : "static"
       } ${(location.pathname === '/' && !isScrolled) ? 'bg-red-300' : 'bg-transparent'}`}
     >

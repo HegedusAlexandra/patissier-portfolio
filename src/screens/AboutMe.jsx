@@ -16,7 +16,7 @@ export default function AboutMe() {
   return (
     <section
       id="about_me"
-      className="flex md:flex-row flex-col justify-center items-center w-[100%] bg-white px-[5vw] pb-[4vh] font-poppins"
+      className="flex md:flex-row flex-col justify-center items-center w-[100%] bg-white md:px-[4vw] px-[1vw] pb-[4vh] font-poppins"
     >
       <div className="absolute md:left-[5vw] top-[94vh] md:top-[100vh] md:size-[22vw] size-[44vw] bg-red-500 rounded-full mt-[2vh]"/>
       <div className="md:w-[40%] w-[80%] rounded-full mt-[2vh]">{View}</div>

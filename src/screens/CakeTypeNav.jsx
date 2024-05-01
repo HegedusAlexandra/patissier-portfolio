@@ -32,7 +32,7 @@ export default function CakeTypeNav() {
           {isHovered === 2 && (
             <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
               <span className="material-symbols-outlined text-[5vh]">cake</span>
-              <h2 className="uppercase text-[4vh]">cakes</h2>
+              <h2 className="text-[3.5vh] capitalize">{t('HomePage.CakeTypeNav.CAKES')}</h2>
               <span className="material-symbols-outlined text-[8vh]">
                 chevron_right
               </span>
@@ -54,7 +54,7 @@ export default function CakeTypeNav() {
           {isHovered === 1 && (
             <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
               <span className="material-symbols-outlined text-[5vh]">icecream</span>
-              <h2 className="uppercase text-[4vh]">plated desserts</h2>
+              <h2 className="text-[3.5vh] capitalize">{t('HomePage.CakeTypeNav.PLATED')}</h2>
               <span className="material-symbols-outlined text-[8vh]">
                 chevron_right
               </span>
@@ -77,7 +77,7 @@ export default function CakeTypeNav() {
           {isHovered === 3 && (
             <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
               <span className="material-symbols-outlined text-[5vh]">cookie</span>
-              <h2 className="uppercase text-[3.5vh]">bonbons & cookies</h2>
+              <h2 className="text-[3.5vh] capitalize">{t('HomePage.CakeTypeNav.BONBON')}</h2>
               <span className="material-symbols-outlined text-[8vh]">
                 chevron_right
               </span>

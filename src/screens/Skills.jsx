@@ -36,7 +36,7 @@ export default function Skills() {
             }
           />
           <p className="text-[3vh] w-[100%] text-center -translate-y-[10vh]">
-            {name}
+            {t(`${name}`)}
           </p>
         </div>
       </div>
@@ -47,26 +47,33 @@ export default function Skills() {
   return (
     <section id="skills" className="w-[100%] font-poppins">
       <div className="flex md:flex-row flex-col-reverse w-[100%] bg-transparent px-[5vw] pt-[6vh] pb-[10vh] gap-2">
-        {counterItem("100", "receipes")}
-        {counterItem("10", "years of experience")}
-        {counterItem("8", "countries's desserts")}
+        {counterItem("100", "HomePage.Skills.COUNTER.RECEIPES")}
+        {counterItem("10", "HomePage.Skills.COUNTER.EXPERIENCE")}
+        {counterItem("8", "HomePage.Skills.COUNTER.COUNTRIES")}
       </div>
       <div className="flex flex-col justify-center items center bg-transparent px-[5vw] py-[10vh] gap-[10vh] bg-white">
         <div className="flex md:flex-row flex-col w-[100%] md:h-[50vh]">
-          <div className="flex flex-col justify-center md:w-[54%] w-[100%] md:pr-[16vw] md:pb-0 pb-[2vh]">
+          <div className="flex flex-col justify-center md:w-[54%] w-[100%] md:pr-[10vw] md:pb-0 pb-[2vh]">
             <h2 className="font-pacifico drop-shadow-smaller text-sky-700 mb:text-[8vh] text-[6vh] mb-[4vh]">
-              technical skills <span className="text-sky-300">.</span>
+            {t('HomePage.Skills.TECHNICAL_SKILLS')} <span className="text-sky-300">.</span>
             </h2>
-            <p>
-              making websites and this a short introduction so you can develop
-              sympahy with memaking websites and this a short introduction so
-              you can develop sympahy with memaking websites and this a short{" "}
+            <p className="mb-[1vh]">
+            {t('HomePage.Skills.TECHNICAL.0')}
+            </p>
+            <p className="mb-[1vh]">
+            {t('HomePage.Skills.TECHNICAL.1')}
+            </p>
+            <p className="mb-[1vh]">
+            {t('HomePage.Skills.TECHNICAL.2')}
+            </p>
+            <p className="mb-[1vh]">
+            {t('HomePage.Skills.TECHNICAL.3')}
             </p>
           </div>
           <div className="md:w-[50%] w-[100%]">
             <LazyImage
               class_img={
-                "w-[100%] md:h-[50vh] h-[10vh] object-cover md:object-top object-center rounded-sm"
+                "w-[100%] md:h-[50vh] h-[30vh] object-cover object-top rounded-sm"
               }
               alt_img={"pavlova"}
               lazy_img={lazy_pavlova}
@@ -78,33 +85,38 @@ export default function Skills() {
           <div className="md:w-[50%] w-[100%]">
             <LazyImage
               class_img={
-                "w-[100%] md:h-[50vh] h-[10vh] object-cover md:object-top object-center rounded-sm"
+                "w-[100%] md:h-[50vh] h-[30vh] object-cover md:object-top object-center rounded-sm"
               }
               alt_img={"kalacs"}
               lazy_img={lazy_kalacs}
               ready_img={ready_kalacs}
             />
           </div>
-          <div className="flex flex-col justify-center md:items-end md:w-[50%] w-[100%] md:pl-[20vw] md:pb-0 pb-[2vh]">
+          <div className="flex flex-col justify-center md:items-end md:w-[50%] w-[100%] md:pl-[10vw] md:pb-0 pb-[2vh]">
             <h2 className="font-pacifico drop-shadow-smaller text-sky-700 mb:text-[8vh] text-[6vh] mb-[4vh]">
-              soft skills <span className="text-sky-300">.</span>
+            {t('HomePage.Skills.SOFT_SKILLS')} <span className="text-sky-300">.</span>
             </h2>
-            <p className="md:text-right">
-              making websites and this a short introduction so you can develop
-              sympahy with memaking websites and this a short introduction so
-              you can develop sympahy with memaking websites and this a short
+            <p className="mb-[1vh] md:text-right">
+            {t('HomePage.Skills.SOFT.0')}
+            </p>
+            <p className="mb-[1vh] md:text-right">
+            {t('HomePage.Skills.SOFT.1')}
+            </p>
+            <p className="mb-[1vh] md:text-right">
+            {t('HomePage.Skills.SOFT.2')}
+            </p>
+            <p className="mb-[1vh] md:text-right">
+            {t('HomePage.Skills.SOFT.3')}
             </p>
           </div>
         </div>
         <div className="flex md:flex-row flex-col w-[100%] md:h-[50vh]">
           <div className="flex flex-col justify-center md:w-[35%] w-[100%] md:pr-[5%] -translate-y-[2vh]">
             <h2 className="font-pacifico drop-shadow-smaller text-sky-700 mb:text-[8vh] text-[6vh] mb-[4vh]">
-              languages <span className="text-sky-300">.</span>
+            {t('HomePage.Skills.LANGUAGES_SKILLS')} <span className="text-sky-300">.</span>
             </h2>
-            <p>
-              making websites and this a short introduction so you can develop
-              sympahy with memaking websites and this a short introduction so
-              you can develop sympahy with memaking websites and this a short
+            <p className="mb-[1vh]">
+            {t('HomePage.Skills.LANGUAGE')}
             </p>
           </div>
           <span className="flex flex-col justify-center md:w-[65%] w-[100%] md:pl-[5%] h-[100%] gap-[2vh]">

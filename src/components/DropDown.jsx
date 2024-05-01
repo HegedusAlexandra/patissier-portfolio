@@ -42,7 +42,7 @@ export default function DropdownComp({ type }) {
 
   return (
     <div
-      className={`w-[10%] translate-y-1 ${
+      className={`w-[10%] ${
         type !== "Language" && "w-fit md:translate-y-1"
       } flex justify-end items-center rounded-sm`}
     >
@@ -54,8 +54,8 @@ export default function DropdownComp({ type }) {
         arrowOpen={
           <span className="material-symbols-outlined">arrow_drop_up</span>
         }
-        menuClassName="absolute text-amber-950 bg-white p-2 pr-6 -translate-x-2 rounded-b-sm"
-        controlClassName="flex flex-row "
+        menuClassName="absolute text-amber-950 bg-white p-2 pr-6 rounded-b-sm"
+        controlClassName="flex flex-row justify-center items-center"
         options={options}
         onChange={(option) =>
           type === "Language"
