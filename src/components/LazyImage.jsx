@@ -21,7 +21,7 @@ const LazyImage = ({ lazy_img, ready_img, alt_img, class_img,loading }) => {
     const imgObserver = new IntersectionObserver(loadImg, {
       root: null,
       threshold: 0,
-      rootMargin: "-200px"
+      rootMargin: "200px 0px 200px 0px"
     });
 
     imgTargets.forEach((img) => imgObserver.observe(img));
