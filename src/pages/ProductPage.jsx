@@ -8,18 +8,18 @@ import OtherScreen from "../screens/OtherScreen";
 export default function ProductPage() {
   const { t } = useTranslation();
   const location = useLocation();
-  const { href } = location.state || {};
+  const { exact } = location.state || {};
 
   useEffect(() => {
     const scrollToSection = () => {
-      const element = document.getElementById(href);
+      const element = document.getElementById(exact);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     };
 
     scrollToSection();
-  }, [href]);
+  }, [exact]);
 
   return (
     <div id="products" className="w-[100%] bg-red-500">

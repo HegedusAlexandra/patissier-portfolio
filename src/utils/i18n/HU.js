@@ -6,7 +6,8 @@ export const HU = {
       ABOUT_ME: "bemutatkozás",
       SKILLS: "képességek",
       CAKES: "édességek",
-      CONTACT: "kapcsolat"
+      CONTACT: "kapcsolat",
+      MAIN:"főoldal"
     },
     HomePage: {
       TITLE: "főoldal",

@@ -6,7 +6,8 @@ export const EN = {
       ABOUT_ME: "about me",
       SKILLS: "skills",
       CAKES: "cakes",
-      CONTACT: "contact"
+      CONTACT: "contact",
+      MAIN: 'main'
     },
     HomePage: {
       TITLE: "home",

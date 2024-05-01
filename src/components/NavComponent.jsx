@@ -13,13 +13,25 @@ export default function NavComponent() {
 
   return (
     <ul className="flex-1 flex flex-row items-center md:justify-end justify-between md:gap-[10%]">
-      <li onClick={() => goToScreen("", "about_me")} className="nav_link ">
-        {t("Header.ABOUT_ME")}
-      </li>
-      <li onClick={() => goToScreen("", "skills")} className="nav_link ">
-        {t("Header.SKILLS")}
-      </li>
-      <li onClick={() => goToScreen("products", "products")} className="nav_link ">
+      {window.innerWidth > 780 && (
+        <>
+          <li onClick={() => goToScreen("", "about_me")} className="nav_link ">
+            {t("Header.ABOUT_ME")}
+          </li>
+          <li onClick={() => goToScreen("", "skills")} className="nav_link ">
+            {t("Header.SKILLS")}
+          </li>
+        </>
+      )}
+      {window.innerWidth <  780 && (
+          <li onClick={() => goToScreen("", "landing")} className="nav_link ">
+            {t("Header.MAIN")}
+          </li> 
+      )}
+      <li
+        onClick={() => goToScreen("products", "products")}
+        className="nav_link "
+      >
         {t("Header.CAKES")}
       </li>
       <li
@@ -28,7 +40,7 @@ export default function NavComponent() {
       >
         {t("Header.CONTACT")}
       </li>
-      {window.scrollY === 0 && <DropDown type={"Language"} />}
+      <DropDown type={"Language"} />
     </ul>
   );
 }

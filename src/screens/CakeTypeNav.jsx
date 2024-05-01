@@ -14,8 +14,8 @@ export default function CakeTypeNav() {
   const navigate = useNavigate();
   const [isHovered, setHovered] = useState(null);
 
-  const goToScreen = (screen, href) => {
-    navigate(`/${screen}`, { state: { href } });
+  const goToScreen = (screen, exact) => {
+    navigate(`/${screen}`, { state: { exact } });
   };
 
   console.log(isHovered);

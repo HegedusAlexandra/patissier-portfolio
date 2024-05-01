@@ -16,7 +16,7 @@ function Footer() {
             location.pathname === "/" ? "bg-orange-50" : "bg-red-400"
           }`}
         >
-          <h2 className="font-pacifico text-red-600 drop-shadow-smaller text-[20vh] text-center translate-y-[10vh]">
+          <h2 className="font-pacifico text-red-600 drop-shadow-smaller md:text-[22vh] text-[8vh] font-semibold md:font-regular text-center translate-y-[10vh]">
             Contact
           </h2>
         </div>

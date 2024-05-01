@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const LazyImage = ({ lazy_img, ready_img, alt_img, class_img }) => {
+const LazyImage = ({ lazy_img, ready_img, alt_img, class_img,loading }) => {
   const imgRef = useRef(null);
 
   useEffect(() => {
@@ -34,6 +34,7 @@ const LazyImage = ({ lazy_img, ready_img, alt_img, class_img }) => {
   return (
     <img
       ref={imgRef}
+      loading={loading}
       className={`${class_img} lazy-img`}
       src={lazy_img}
       data-src={ready_img}
