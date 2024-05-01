@@ -37,6 +37,7 @@ export default function CakeTypeNav() {
             </div>
           )}
           <LazyImage
+            loading={'eager'}
             class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
             alt_img={"cake"}
             lazy_img={lazy_cake}
@@ -59,6 +60,7 @@ export default function CakeTypeNav() {
             </div>
           )}
           <LazyImage
+          loading={'eager'}
             class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
             alt_img={"plated"}
             lazy_img={lazy_plated}
@@ -82,6 +84,7 @@ export default function CakeTypeNav() {
             </div>
           )}
           <LazyImage
+          loading={'eager'}
             class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
             alt_img={"bonbon"}
             lazy_img={lazy_bonbon}

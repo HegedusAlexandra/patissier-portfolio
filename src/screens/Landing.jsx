@@ -31,7 +31,7 @@ export default function Landing() {
       </div>
       <div className="flex justify-end items-center md:w-[44vw] w-[100vw] h-[80vh] pt-[10vh] ">
         <LazyImage
-          class_img={"bg-transparent md:size-[40vw] product_img"}
+          class_img={"bg-transparent md:size-[40vw] w-[100vw] product_img"}
           alt_img={"first_dessert"}
           lazy_img={lazy_landing}
           ready_img={ready_landing}
