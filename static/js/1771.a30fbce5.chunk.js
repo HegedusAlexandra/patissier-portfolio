@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpatissier_portfolio=self.webpackChunkpatissier_portfolio||[]).push([[1771],{1771:(p,s,e)=>{p.exports=e.p+"static/media/pl (8).2d1f7d360ad07c1d5d6f.jpg"}}]);
