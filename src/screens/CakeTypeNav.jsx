@@ -18,8 +18,6 @@ export default function CakeTypeNav() {
     navigate(`/${screen}`, { state: { exact } });
   };
 
-  console.log(isHovered);
-
   return (
     <section className="w-[100%] bg-gradient-to-b from-white to-[#FFF7ED] p-[5vw]">
       <ul className="flex flex-row items-center justify-center w-[100%] h-[100%] gap-[0.5%]">
