@@ -15,27 +15,27 @@ export default function NavComponent() {
     <ul className="flex-1 flex flex-row items-center md:justify-end justify-between md:gap-[10%]">
       {window.innerWidth > 780 && (
         <>
-          <li onClick={() => goToScreen("", "about_me")} className="nav_link ">
+          <li onClick={() => goToScreen("patissier-portfolio", "about_me")} className="nav_link ">
             {t("Header.ABOUT_ME")}
           </li>
-          <li onClick={() => goToScreen("", "skills")} className="nav_link ">
+          <li onClick={() => goToScreen("patissier-portfolio", "skills")} className="nav_link ">
             {t("Header.SKILLS")}
           </li>
         </>
       )}
       {window.innerWidth <  780 && (
-          <li onClick={() => goToScreen("", "landing")} className="nav_link ">
+          <li onClick={() => goToScreen("patissier-portfolio", "landing")} className="nav_link ">
             {t("Header.MAIN")}
           </li> 
       )}
       <li
-        onClick={() => goToScreen("products", "products")}
+        onClick={() => goToScreen("patissier-portfolio/products", "products")}
         className="nav_link "
       >
         {t("Header.CAKES")}
       </li>
       <li
-        onClick={() => goToScreen("", "contact")}
+        onClick={() => goToScreen("patissier-portfolio", "contact")}
         className="nav_link flex justify-center items-center p-[1%] bg-white text-red-300 font-bold rounded-full"
       >
         {t("Header.CONTACT")}

@@ -4,8 +4,8 @@ const Language = Object.freeze({
   });
 
 const Sitemap = Object.freeze({
-    HOME: "",
-    PRODUCTS: "products",
+    HOME: "patissier-portfolio",
+    PRODUCTS: "patissier-portfolio/products",
   });
   
   

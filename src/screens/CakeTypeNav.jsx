@@ -26,7 +26,7 @@ export default function CakeTypeNav() {
         <li
           onMouseEnter={() => setHovered(2)}
           onMouseOut={() => setHovered(null)}
-          onClick={() => goToScreen("products", "cake")}
+          onClick={() => goToScreen("patissier-portfolio/products", "cake")}
           className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm object-cover overflow-hidden shadow-type "
         >
           {isHovered === 2 && (
@@ -48,7 +48,7 @@ export default function CakeTypeNav() {
         <li
           onMouseEnter={() => setHovered(1)}
           onMouseOut={() => setHovered(null)}
-          onClick={() => goToScreen("products", "plated")}
+          onClick={() => goToScreen("patissier-portfolio/products", "plated")}
           className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm overflow-hidden shadow-type"
         >
           {isHovered === 1 && (
@@ -71,7 +71,7 @@ export default function CakeTypeNav() {
         <li
           onMouseEnter={() => setHovered(3)}
           onMouseOut={() => setHovered(null)}
-          onClick={() => goToScreen("products", "other")}
+          onClick={() => goToScreen("patissier-portfolio/products", "other")}
           className="flex-1 h-[70%] bg-white overflow-hidden shadow-type rounded-full md:rounded-sm"
         >
           {isHovered === 3 && (
