@@ -20,12 +20,12 @@ function Header() {
 
   return (
     <section
-      className={`flex justify-center items-center h-[10vh] w-[100%] font-poppins md:text-[1.8vh] text-[1.4vh] ${
+      className={`flex justify-center items-center h-[8vh] w-[100%] font-poppins md:text-[1.8vh] text-[1.4vh] ${
         isScrolled ? "fixed z-10 py-[3%]" : "static"
       } ${(location.pathname === '/patissier-portfolio/' && !isScrolled) ? 'bg-red-300' : 'bg-transparent'}`}
     >
       <div
-        className={`flex flex-row justify-between items-center h-[8vh] px-[5%] uppercase text-white ${
+        className={`flex flex-row justify-between items-center h-[8vh] px-[5%] uppercase text-white transition-all duration-300 ${
           isScrolled ? "w-[90%] rounded-full bg-red-500/60 backdrop-blur-lg" : "w-[100%]"
         }`}
       >

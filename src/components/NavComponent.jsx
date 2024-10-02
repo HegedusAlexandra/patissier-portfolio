@@ -12,7 +12,7 @@ export default function NavComponent() {
   };
 
   return (
-    <ul className="flex-1 flex flex-row items-center md:justify-end justify-between md:gap-[10%]">
+    <ul className="flex-1 flex flex-row items-center md:justify-end justify-between md:gap-[10%] text-black/80 tracking-wide">
       {window.innerWidth > 780 && (
         <>
           <li onClick={() => goToScreen("patissier-portfolio/", "about_me")} className="nav_link ">
@@ -36,7 +36,7 @@ export default function NavComponent() {
       </li>
       <li
         onClick={() => goToScreen("patissier-portfolio/", "contact")}
-        className="nav_link flex justify-center items-center p-[1%] bg-white text-red-300 font-bold rounded-full"
+        className="nav_link flex justify-center items-center px-[1%] bg-white/90 text-red-600 rounded-full"
       >
         {t("Header.CONTACT")}
       </li>
