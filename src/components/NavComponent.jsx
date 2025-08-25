@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DropDown from "../components/DropDown";
 
 export default function NavComponent() {
@@ -15,27 +15,27 @@ export default function NavComponent() {
     <ul className="flex-1 flex flex-row items-center md:justify-end justify-between md:gap-[10%] text-black/80 tracking-wide">
       {window.innerWidth > 780 && (
         <>
-          <li onClick={() => goToScreen("patissier-portfolio/", "about_me")} className="nav_link ">
+          <li onClick={() => goToScreen("/", "about_me")} className="nav_link ">
             {t("Header.ABOUT_ME")}
           </li>
-          <li onClick={() => goToScreen("patissier-portfolio/", "skills")} className="nav_link ">
+          <li onClick={() => goToScreen("/", "skills")} className="nav_link ">
             {t("Header.SKILLS")}
           </li>
         </>
       )}
       {window.innerWidth <  780 && (
-          <li onClick={() => goToScreen("patissier-portfolio/", "landing")} className="nav_link ">
+          <li onClick={() => goToScreen("/", "landing")} className="nav_link ">
             {t("Header.MAIN")}
           </li> 
       )}
       <li
-        onClick={() => goToScreen("patissier-portfolio/products", "products")}
+        onClick={() => goToScreen("/products", "products")}
         className="nav_link "
       >
         {t("Header.CAKES")}
       </li>
       <li
-        onClick={() => goToScreen("patissier-portfolio/", "contact")}
+        onClick={() => goToScreen("/", "contact")}
         className="nav_link flex justify-center items-center px-[1%] bg-white/90 text-red-600 rounded-full"
       >
         {t("Header.CONTACT")}

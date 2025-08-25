@@ -14,7 +14,7 @@ const basename = process.env.REACT_APP_BASENAME || "/";
 
 const router = createBrowserRouter([
   {
-    path: `/`,
+    path: `/${Sitemap.HOME}`,
     element: (
       <Layout>
         <HomePage />
