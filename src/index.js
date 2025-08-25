@@ -10,6 +10,7 @@ import ProductPage from "./pages/ProductPage";
 import Layout from "./screens/Layout";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { Sitemap } from "./utils/Enum";
+const basename = process.env.REACT_APP_BASENAME || "/";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       </Layout>
     )
   }
-]);
+],{ basename });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -25,7 +25,7 @@ export default function CakeTypeNav() {
           onMouseEnter={() => setHovered(2)}
           onMouseOut={() => setHovered(null)}
           onClick={() => goToScreen("patissier-portfolio/products", "cake")}
-          className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm object-cover overflow-hidden shadow-type "
+          className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm object-cover overflow-hidden shadow-type"
         >
           {isHovered === 2 && (
             <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
