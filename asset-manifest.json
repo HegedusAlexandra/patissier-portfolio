@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/patissier-portfolio/static/css/main.5c1daf22.css",
-    "main.js": "/patissier-portfolio/static/js/main.bd176825.js",
+    "main.js": "/patissier-portfolio/static/js/main.3aac9c6a.js",
     "static/js/6453.4f83dce5.chunk.js": "/patissier-portfolio/static/js/6453.4f83dce5.chunk.js",
     "static/js/9836.6e1147de.chunk.js": "/patissier-portfolio/static/js/9836.6e1147de.chunk.js",
     "static/js/7897.a52d5170.chunk.js": "/patissier-portfolio/static/js/7897.a52d5170.chunk.js",
@@ -241,11 +241,11 @@
     "static/media/pl (13l).jpg": "/patissier-portfolio/static/media/pl (13l).3bbfa2f2a0b4c6b9aa92.jpg",
     "index.html": "/patissier-portfolio/index.html",
     "main.5c1daf22.css.map": "/patissier-portfolio/static/css/main.5c1daf22.css.map",
-    "main.bd176825.js.map": "/patissier-portfolio/static/js/main.bd176825.js.map",
+    "main.3aac9c6a.js.map": "/patissier-portfolio/static/js/main.3aac9c6a.js.map",
     "6453.4f83dce5.chunk.js.map": "/patissier-portfolio/static/js/6453.4f83dce5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c1daf22.css",
-    "static/js/main.bd176825.js"
+    "static/js/main.3aac9c6a.js"
   ]
 }
