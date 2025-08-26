@@ -14,83 +14,85 @@ export default function CakeTypeNav() {
   const navigate = useNavigate();
   const [isHovered, setHovered] = useState(null);
 
+  const items = [
+    {
+      id: "cake",
+      hoverId: 1,
+      icon: "cake",
+      title: t("HomePage.CakeTypeNav.CAKES"),
+      lazy: lazy_cake,
+      ready: ready_cake,
+      layout: "flex-col items-center justify-center text-[3vh]",
+    },
+    {
+      id: "plated",
+      hoverId: 2,
+      icon: "icecream",
+      title: t("HomePage.CakeTypeNav.PLATED"),
+      lazy: lazy_plated,
+      ready: ready_plated,
+      layout: "flex-col items-center justify-center text-[3vh]",
+    },
+    {
+      id: "other",
+      hoverId: 3,
+      icon: "cookie",
+      title: t("HomePage.CakeTypeNav.BONBON"),
+      lazy: lazy_bonbon,
+      ready: ready_bonbon,
+      layout: "flex-col items-center justify-center text-[3vh]",
+    }
+  ];
+
   const goToScreen = (screen, exact) => {
     navigate(`/${screen}`, { state: { exact } });
   };
 
   return (
-    <section className="w-[100%] bg-gradient-to-b from-white to-[#FFF7ED] p-[5vw]">
-      <ul className="flex flex-row items-center justify-center w-[100%] h-[100%] gap-[0.5%]">
-        <li
-          onMouseEnter={() => setHovered(2)}
-          onMouseOut={() => setHovered(null)}
-          onClick={() => goToScreen("patissier-portfolio/products", "cake")}
-          className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm object-cover overflow-hidden shadow-type"
-        >
-          {isHovered === 2 && (
-            <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
-              <span className="material-symbols-outlined text-[5vh]">cake</span>
-              <h2 className="text-[3.5vh] capitalize">{t('HomePage.CakeTypeNav.CAKES')}</h2>
-              <span className="material-symbols-outlined text-[8vh]">
-                chevron_right
-              </span>
-            </div>
-          )}
-          <LazyImage
-            loading={'eager'}
-            class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
-            alt_img={"cake"}
-            lazy_img={lazy_cake}
-            ready_img={ready_cake}
-          />
-        </li>
-        <li
-          onMouseEnter={() => setHovered(1)}
-          onMouseOut={() => setHovered(null)}
-          onClick={() => goToScreen("patissier-portfolio/products", "plated")}
-          className="flex-1 h-[70%] bg-white rounded-full md:rounded-sm overflow-hidden shadow-type"
-        >
-          {isHovered === 1 && (
-            <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
-              <span className="material-symbols-outlined text-[5vh]">icecream</span>
-              <h2 className="text-[3.5vh] capitalize">{t('HomePage.CakeTypeNav.PLATED')}</h2>
-              <span className="material-symbols-outlined text-[8vh]">
-                chevron_right
-              </span>
-            </div>
-          )}
-          <LazyImage
-          loading={'eager'}
-            class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
-            alt_img={"plated"}
-            lazy_img={lazy_plated}
-            ready_img={ready_plated}
-          />
-        </li>
-
-        <li
-          onMouseEnter={() => setHovered(3)}
-          onMouseOut={() => setHovered(null)}
-          onClick={() => goToScreen("patissier-portfolio/products", "other")}
-          className="flex-1 h-[70%] bg-white overflow-hidden shadow-type rounded-full md:rounded-sm"
-        >
-          {isHovered === 3 && (
-            <div className="absolute w-[30vw] flex flex-row items-center justify-between translate-y-[10vh] text-[3vh] gap-[1vw] px-[2vw]">
-              <span className="material-symbols-outlined text-[5vh]">cookie</span>
-              <h2 className="text-[3.5vh] capitalize">{t('HomePage.CakeTypeNav.BONBON')}</h2>
-              <span className="material-symbols-outlined text-[8vh]">
-                chevron_right
-              </span>
-            </div>
-          )}
-          <LazyImage
-          loading={'eager'}
-            class_img={"w-[100%] object-contain hover:opacity-45 rounded-full md:rounded-none"}
-            alt_img={"bonbon"}
-            lazy_img={lazy_bonbon}
-            ready_img={ready_bonbon}
-          />
-        </li>
+    <section className="w-full bg-gradient-to-b from-white to-[#FFF7ED] p-[5vw]">
+      <ul className="flex flex-row items-center justify-center w-full h-full gap-[0.5%]">
+        {items.map(
+          ({
+            id,
+            hoverId,
+            icon,
+            title,
+            lazy,
+            ready,
+            layout,
+            iconSize,
+            titleSize
+          }) => (
+            <li
+              key={id}
+              onMouseEnter={() => setHovered(hoverId)}
+              onMouseLeave={() => setHovered(null)}
+              onClick={() => goToScreen("products", id)}
+              className="flex-1 h-[70%] rounded-full md:rounded-sm overflow-hidden hover:shadow-type"
+            >
+              {isHovered === hoverId && (
+                <div
+                  className={`absolute w-[30vw] flex ${layout} text-[3vh] gap-[1vw] h-[62%]`}
+                >
+                  <span className={`material-symbols-outlined text-[8vh]`}>
+                    {icon}
+                  </span>
+                  <h2 className={`text-[6vh] capitalize`}>{title}</h2>
+                  <span className="material-symbols-outlined text-[8vh]">
+                    chevron_right
+                  </span>
+                </div>
+              )}
+              <LazyImage
+                loading="eager"
+                class_img="w-full object-contain hover:opacity-45 rounded-full md:rounded-none"
+                alt_img={id}
+                lazy_img={lazy}
+                ready_img={ready}
+              />
+            </li>
+          )
+        )}
       </ul>
     </section>
   );
