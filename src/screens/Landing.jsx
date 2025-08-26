@@ -20,7 +20,7 @@ export default function Landing() {
         <p className="md:text-[4vh] text-[3vh] font-bold md:w-[30vw] w-[80vw]">
           {t("HomePage.Landing.HELLO")}
         </p>
-        <h1 className="text-[12vh] md:text-[24vh] mt-[22vh] md:mt-0 font-pacifico text-red-600 drop-shadow-smaller">
+        <h1 className="text-[8vh] md:text-[24vh] mt-[22vh] md:mt-0 font-pacifico text-red-600 drop-shadow-smaller">
           {t("HomePage.Landing.PATISSIER")}
         </h1>
         <p className="text-[2vh] md:w-[40vw] w-[90vw] mt-[2vh] text-black/90">
