@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/patissier-portfolio/static/css/main.f4b3c356.css",
-    "main.js": "/patissier-portfolio/static/js/main.b3bef574.js",
+    "main.css": "/patissier-portfolio/static/css/main.0edfc2b4.css",
+    "main.js": "/patissier-portfolio/static/js/main.19bb78bf.js",
     "static/js/6453.4f83dce5.chunk.js": "/patissier-portfolio/static/js/6453.4f83dce5.chunk.js",
     "static/js/9836.6e1147de.chunk.js": "/patissier-portfolio/static/js/9836.6e1147de.chunk.js",
     "static/js/7897.a52d5170.chunk.js": "/patissier-portfolio/static/js/7897.a52d5170.chunk.js",
@@ -137,6 +137,7 @@
     "static/media/pl (5).jpg": "/patissier-portfolio/static/media/pl (5).627cec32c5bb8f3dc48a.jpg",
     "static/media/pl (10).jpg": "/patissier-portfolio/static/media/pl (10).3a422cb8f01009790b6a.jpg",
     "static/media/ot (10).jpg": "/patissier-portfolio/static/media/ot (10).d4d27e79e76079964d02.jpg",
+    "static/media/macaron.jpg": "/patissier-portfolio/static/media/macaron.216acbc7567f63858498.jpg",
     "static/media/pl (27).jpg": "/patissier-portfolio/static/media/pl (27).24f69c2e5ce865935fba.jpg",
     "static/media/ca (19).jpg": "/patissier-portfolio/static/media/ca (19).436f8d095c5ca39fe6cb.jpg",
     "static/media/ca (5).jpg": "/patissier-portfolio/static/media/ca (5).aff928bde7b80ea8a6d9.jpg",
@@ -240,12 +241,12 @@
     "static/media/pl (17l).jpg": "/patissier-portfolio/static/media/pl (17l).51af169cd4a470b5eb5d.jpg",
     "static/media/pl (13l).jpg": "/patissier-portfolio/static/media/pl (13l).3bbfa2f2a0b4c6b9aa92.jpg",
     "index.html": "/patissier-portfolio/index.html",
-    "main.f4b3c356.css.map": "/patissier-portfolio/static/css/main.f4b3c356.css.map",
-    "main.b3bef574.js.map": "/patissier-portfolio/static/js/main.b3bef574.js.map",
+    "main.0edfc2b4.css.map": "/patissier-portfolio/static/css/main.0edfc2b4.css.map",
+    "main.19bb78bf.js.map": "/patissier-portfolio/static/js/main.19bb78bf.js.map",
     "6453.4f83dce5.chunk.js.map": "/patissier-portfolio/static/js/6453.4f83dce5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4b3c356.css",
-    "static/js/main.b3bef574.js"
+    "static/css/main.0edfc2b4.css",
+    "static/js/main.19bb78bf.js"
   ]
 }
