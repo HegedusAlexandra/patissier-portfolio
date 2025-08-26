@@ -26,7 +26,7 @@ function Header() {
     >
       <div
         className={`flex flex-row justify-between items-center h-[8vh] px-[5%] uppercase text-white transition-all duration-300 ${
-          isScrolled ? "w-[90%] rounded-full bg-red-500/60 backdrop-blur-lg" : "w-[100%]"
+          isScrolled ? "md:w-[90%] w-[100%] md:rounded-full md:bg-red-500/60 backdrop-blur-lg" : "w-[100%]"
         }`}
       >
         <h2 className="w-[20%] hidden md:block">{t("Header.AIM")}</h2>

@@ -1,5 +1,4 @@
-import React, { memo } from "react";
-import DropDown from "../components/DropDown";
+import { memo } from "react";
 import ContactForm from "../components/ContactForm";
 import { useLocation } from "react-router-dom";
 
@@ -13,7 +12,7 @@ function Footer() {
       ) : (
         <div
           className={`w-[100%] h-[30vh] ${
-            location.pathname === "/" ? "bg-orange-50" : "bg-red-400"
+            location.pathname === "/products" ? "bg-orange-50" : "bg-red-400"
           }`}
         >
           <h2 className="font-pacifico text-red-600 drop-shadow-smaller md:text-[22vh] text-[8vh] font-semibold md:font-regular text-center translate-y-[10vh]">
@@ -23,10 +22,10 @@ function Footer() {
       )}
       <ContactForm />
       <div className="flex flex-col justify-center items-center bg-orange-50 w-[100%] px-[4%] h-[32vh] ">
-        <h2 className="md:text-[20vh] text-[4vh] font-pacifico text-zinc-700 drop-shadow-smaller">
+        <h2 className="md:text-[20vh] text-[4vh] font-pacifico text-orange-600 drop-shadow-smaller">
           Alexandra's Portfolio
         </h2>
-        <p className="pb-[1vh]">&copy; Copyright 2024 Hegedüs Alexandra</p>
+        <p className="pb-[1vh]">&copy; Copyright 2025 Hegedüs Alexandra</p>
       </div>
     </footer>
   );
