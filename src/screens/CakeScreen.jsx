@@ -30,7 +30,7 @@ const {t} = useTranslation()
   return (
     <section id="cake" className="w-[100%] bg-amber-50">
       <div className="w-[100%] h-[30vh] bg-red-400">
-      <h2 className="font-pacifico text-red-600 drop-shadow-smaller md:text-[180px] text-[8vh] md:font-regular font-semibold text-center translate-y-[10vh]">
+      <h2 className="font-pacifico text-red-600 drop-shadow-smaller md:text-[18vh] text-[8vh] md:font-regular text-center translate-y-[12vh]">
       {t('HomePage.CakeTypeNav.CAKES')}
         </h2>
       </div>
@@ -38,7 +38,7 @@ const {t} = useTranslation()
         {images.lazyImages.map((lazyImage, index) => (
           <LazyImage
           loading={index < 4 ? 'eager' : 'lazy'}
-          class_img={"md:size-[24vw] object-contain shadow-type bg-red-300 md:m-[4vh] product_img"}
+          class_img={"md:size-[20vw] object-contain shadow-type bg-red-300 md:m-2 product_img"}
           alt_img={`cake ${index + 1}`}
             key={`cake ${index + 1}`}
             lazy_img={lazyImage.default}

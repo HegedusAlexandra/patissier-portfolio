@@ -22,7 +22,7 @@ function Footer() {
       )}
       <ContactForm />
       <div className="flex flex-col justify-center items-center bg-orange-50 w-[100%] px-[4%] h-[32vh] ">
-        <h2 className="md:text-[20vh] text-[4vh] font-pacifico text-orange-600 drop-shadow-smaller">
+        <h2 className="md:text-[16vh] text-[4vh] font-pacifico text-orange-600 drop-shadow-smaller">
           Alexandra's Portfolio
         </h2>
         <p className="pb-[1vh]">&copy; Copyright 2025 Hegedüs Alexandra</p>
