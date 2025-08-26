@@ -60,8 +60,6 @@ export default function CakeTypeNav() {
             lazy,
             ready,
             layout,
-            iconSize,
-            titleSize
           }) => (
             <li
               key={id}

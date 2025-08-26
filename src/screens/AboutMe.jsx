@@ -24,7 +24,7 @@ export default function AboutMe() {
         <h2 className="font-pacifico text-zinc-700 md:text-[10vh] text-[6vh] mx-auto mb-[4vh] md:mx-0">
           {t("HomePage.AboutMe.TITLE")}
         </h2>
-        <p className="text-[1.8vh]">{t("HomePage.AboutMe.INTRODUCTION")}</p>
+        <p className="text-[2vh]">{t("HomePage.AboutMe.INTRODUCTION")}</p>
       </div>
     </section>
   );

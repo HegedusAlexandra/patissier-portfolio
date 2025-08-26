@@ -52,22 +52,16 @@ export default function Skills() {
       </div>
       <div className="flex flex-col justify-center items-center bg-transparent px-[5vw] py-[10vh] gap-[20vh] bg-white">
         <div className="flex md:flex-row flex-col w-[100%] md:h-[50vh]">
-          <div className="flex flex-col justify-center md:w-[54%] w-[100%] md:pr-[2vw] md:pb-0 pb-[2vh]">
+          <div className="flex flex-col justify-center md:w-[54%] w-[100%] md:pr-[2vw] md:pb-0 pb-[2vh] text-[2vh]">
             <h2 className="font-pacifico text-zinc-700 text-[4vh] mb-[4vh]">
-            {t('HomePage.Skills.TECHNICAL_SKILLS')}
+              {t("HomePage.Skills.TECHNICAL_SKILLS")}
             </h2>
-            <p className="mb-[1vh]">
-            {t('HomePage.Skills.TECHNICAL.0')}
-            </p>
-            <p className="mb-[1vh]">
-            {t('HomePage.Skills.TECHNICAL.1')}
-            </p>
-       {/*      <p className="mb-[1vh]">
+            <p className="mb-[1vh]">{t("HomePage.Skills.TECHNICAL.0")}</p>
+            <p className="mb-[1vh]">{t("HomePage.Skills.TECHNICAL.1")}</p>
+            {/*      <p className="mb-[1vh]">
             {t('HomePage.Skills.TECHNICAL.2')}
             </p> */}
-            <p className="mb-[1vh]">
-            {t('HomePage.Skills.TECHNICAL.3')}
-            </p>
+            <p className="mb-[1vh]">{t("HomePage.Skills.TECHNICAL.3")}</p>
           </div>
           <div className="md:w-[50%] w-[100%]">
             <LazyImage
@@ -91,31 +85,31 @@ export default function Skills() {
               ready_img={ready_kalacs}
             />
           </div>
-          <div className="flex flex-col justify-center md:items-end md:w-[50%] w-[100%] md:pl-[2vw] md:pb-0 pb-[2vh]">
+          <div className="flex flex-col justify-center md:items-end md:w-[50%] w-[100%] md:pl-[2vw] md:pb-0 pb-[2vh] text-[2vh]">
             <h2 className="font-pacifico  text-zinc-700 text-[4vh] mb-[4vh]">
-            {t('HomePage.Skills.SOFT_SKILLS')} 
+              {t("HomePage.Skills.SOFT_SKILLS")}
             </h2>
             <p className="mb-[1vh] md:text-right">
-            {t('HomePage.Skills.SOFT.0')}
+              {t("HomePage.Skills.SOFT.0")}
             </p>
             <p className="mb-[1vh] md:text-right">
-            {t('HomePage.Skills.SOFT.1')}
+              {t("HomePage.Skills.SOFT.1")}
             </p>
-           {/*  <p className="mb-[1vh] md:text-right">
+            {/*  <p className="mb-[1vh] md:text-right">
             {t('HomePage.Skills.SOFT.2')}
             </p> */}
             <p className="mb-[1vh] md:text-right">
-            {t('HomePage.Skills.SOFT.3')}
+              {t("HomePage.Skills.SOFT.3")}
             </p>
           </div>
         </div>
         <div className="flex md:flex-row flex-col jus w-[100%] md:h-[50vh]">
           <div className="flex flex-col md:w-[35%] w-[100%] md:pr-[5%]">
             <h2 className="font-pacifico text-zinc-700 text-[4vh] mb-[4vh]">
-            {t('HomePage.Skills.LANGUAGES_SKILLS')} 
+              {t("HomePage.Skills.LANGUAGES_SKILLS")}
             </h2>
-            <p className="mb-[1vh]">
-            {t('HomePage.Skills.LANGUAGE')}
+            <p className=" text-[2vh] mb-[8vh]">
+              {t("HomePage.Skills.LANGUAGE")}
             </p>
           </div>
           <span className="flex flex-col md:w-[65%] w-[100%] md:pl-[5%] h-[100%] gap-[2vh]">
